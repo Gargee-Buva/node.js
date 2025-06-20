@@ -1,0 +1,3 @@
+1. Node.js is a runtime environment made up with chrome's v8 engine which is embedded into c++
+2. UI related features are being removed i.e window object etc
+3. npm init creates a package .json file , in the scripts section we can add our on scripts with which we can choose which file will be the starting point of the project
