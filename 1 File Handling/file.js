@@ -25,12 +25,23 @@ const result = fs.readFile("./contacts.txt","utf-8",(err,result)=>{
 
 fs.appendFileSync("./append.txt",`${Date.now()} Hey There\n`) ;
 
-fs.cpSync("./text.txt" , "./copy.txt") ;
+fs.cpSync("./text.txt" , "./copy.txt") ;  // a copy of text.txt file gets created 
 
-fs.unlinkSync("./copy.txt") ;
+fs.unlinkSync("./copy.txt") ;  // the file copy.txt gets deleted
 
-console.log(fs.statSync("./text.txt")) ;
+console.log(fs.statSync("./text.txt")) ;  //statistics of a file
 
 // fs.mkdirSync("my-docs") ;
 
-fs.mkdirSync("folder/a/b",{recursive : true}) ;
+fs.mkdirSync("folder/a/b",{recursive : true}) ; //make a directory 
+
+/*With recursive: true:
+It will automatically create:
+
+folder
+
+folder/a
+
+folder/a/b
+(even if none of them existed)
+*/
