@@ -1,1 +1,2 @@
 Hey there
+// note : we cannot performe file handling in normal javascript because of scecurity purposes , hence we use node.js which provides fs(file system) module through which we can interact with files 
