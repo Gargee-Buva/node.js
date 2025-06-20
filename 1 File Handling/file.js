@@ -1,5 +1,6 @@
 const fs = require("fs") ;
 
+//sync returens the result and can store it in variable
 // sync
 fs.writeFileSync("./text.txt" , "Hey there") ;
 
