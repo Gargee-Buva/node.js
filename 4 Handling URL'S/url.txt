@@ -1,0 +1,71 @@
+🧾 Purpose:
+To create a simple HTTP server using Node.js that:
+
+Logs incoming requests with timestamps.
+
+Serves basic routes (/ and /about).
+
+Responds with appropriate content based on the request.
+
+Stores logs in a file.
+
+📦 Modules Used:
+http: To create the server.
+
+fs: To handle file system operations (like appending logs).
+
+url: To parse the request URL and query parameters.
+
+⚙️ Core Functionality:
+Server Creation:
+
+Uses http.createServer() to build the server.
+
+Handles requests with a callback function receiving req and res.
+
+Logging Requests:
+
+For every request, logs the current timestamp and URL.
+
+Appends this info to a file named log.txt using fs.appendFile.
+
+Routing Logic:
+
+If the path is /, responds with "home page".
+
+If the path is /about, responds with "Hi, {username}", where username is extracted from the query string (e.g., /about?myname=Gargee).
+
+Any other path returns "404 Not found".
+
+Server Listening:
+
+The server listens on port 8000.
+
+Logs "Server Started !" to the console when it begins.
+
+
+-----------------------------------------------------------------------------------------------------------------
+✅ URL Query Parameters – In Short:
+What are they?
+Query parameters are key-value pairs added to a URL after a ?, used to pass data to the server.
+
+Format:
+
+/path?key1=value1&key2=value2
+Example:
+
+
+/about?myname=Gargee
+Here, myname is the key and Gargee is the value.
+
+Why are they used?
+
+To send data from the client (browser) to the server.
+
+Commonly used for:
+
+Searching (?q=flowers)
+
+Filtering (?category=books&sort=price)
+
+Customizing responses (like greeting a user by name).
