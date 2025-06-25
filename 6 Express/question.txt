@@ -1,0 +1,16 @@
+📦In Web Development:
+Routing defines:
+
+What should happen when the user visits /
+
+What should happen when the user visits /about
+
+What should happen when the user submits a form to /contact
+
+🔑 Key Points:
+app.get(path, callback) → Handles GET requests
+
+app.post(path, callback) → Handles POST requests
+
+Each route is like a rule for what the server should do when it gets a certain request
+
