@@ -1,0 +1,92 @@
+What is a REST API?
+REST API stands for Representational State Transfer Application Programming Interface. 
+It's a set of rules and conventions that allow different software applications (like your frontend app and backend server) to communicate with each other over the HTTP protocol,
+just like how browsers access websites.
+
+Key Concepts of REST API:
+| Concept        | Meaning                                                |
+| ---------------| ------------------------------------------------------ |
+| Client         | The requester (e.g., frontend app, mobile app)         |
+| Server         | The responder (e.g., backend service with database)    |
+| Resource       | The data being accessed (e.g., users, products, posts) |
+| Endpoint       | A specific URL where the resource can be accessed      |
+| HTTP Methods   | Define what action to perform (see below)              |
+
+Common HTTP Methods in REST:
+| Method   | Meaning              | Example                                 |
+| -------- | -------------------- | --------------------------------------- |
+| GET      | Read data            | GET /users/1 → Get user with ID 1       |
+| POST     | Create new data      | POST /users → Create a new user         |
+| PUT      | Update existing data | PUT /users/1 → Update user with ID 1    |
+| DELETE   | Remove data          | DELETE /users/1 → Delete user with ID 1 |
+
+
+Example:
+Suppose you have an online shopping app:
+| Action               | REST Endpoint | Method  |
+| -------------------- | ------------- | --------|
+| Get list of products | /products     | GET     |
+| Add a new product    | /products     | POS     |
+| Update a product     | /products/5   | PUT     |
+| Delete a product     | /products/5   | DELETE  |
+
+REST API Response
+Usually, the server responds with JSON
+
+
+Summary:
+1. REST API is a way for software systems to talk to each other using HTTP.
+2. It uses standard methods like GET, POST, PUT, DELETE.
+3. It's widely used in web development, mobile apps, and microservices.
+
+
+Client-Side Rendering means that:
+
+1. The browser (client) downloads a basic HTML file with JavaScript.
+2. JavaScript (usually from a framework like React, Vue, etc.) runs in the browser.
+3.It then builds and displays the content dynamically.
+
+Pros:
+Interactive and fast after initial load.
+Good for single-page applications (SPAs).
+
+Cons:
+Slower initial load (blank screen until JS loads).
+Not great for SEO unless handled with extra tools.
+
+Server-Side Rendering means that:
+
+The server generates the full HTML for each page.
+The browser simply displays the ready-made content.
+No need to wait for JavaScript to build the UI.
+
+✅An API is a medium through which two different programs communicate and exchange data or services.
+
+It acts like a messenger that takes requests from one program, sends them to another, and brings back the response — all following a set of defined rules.
+
+👉An API route is a specific path or endpoint in an API that defines how a program can access a particular function or piece of data.
+
+In simple terms:
+An API route is like an address you use to request something from a server.
+
+Example:
+Suppose you have an API for a weather app:
+
+GET /weather/today → gets today’s weather
+
+POST /user/login → logs a user in
+
+Each of these is an API route.
+
+The route includes the HTTP method (GET, POST, etc.) and the URL path.
+
+When you make a request to that route, the server knows what logic to run or data to return.
+
+Real-world analogy:
+Think of an API as a restaurant, and API routes as the menu items. You choose a menu item (route), and the kitchen (server) gives you what you asked for.
+
+
+
+
+
+

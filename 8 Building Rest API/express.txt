@@ -1,0 +1,74 @@
+Why is Express needed when creating a REST API?
+Express.js is a web application framework for Node.js that makes it easy and efficient to build REST APIs.
+
+Here's why it's useful:
+✅ 1. Handles HTTP Requests Easily
+REST APIs are all about handling GET, POST, PUT, DELETE requests.
+
+Express provides simple syntax like:
+
+app.get('/users', (req, res) => { ... });
+✅ 2. Routing
+Express lets you define API routes cleanly.
+
+Example:
+
+app.post('/login', (req, res) => { ... });
+✅ 3. Middleware Support
+You can add functions (middleware) to handle authentication, logging, validation, etc.
+
+app.use(express.json()); // to parse JSON body
+✅ 4. Lightweight and Fast
+Express doesn’t include unnecessary features — it's minimal, allowing you to add what you need.
+
+✅ 5. Community and Ecosystem
+Tons of plugins and libraries (like for security, database, etc.) that integrate well.
+
+
+Without Express:
+You’d have to write a lot of boilerplate code using Node’s built-in http module, like manually parsing URLs, handling status codes, etc. Express abstracts all of that, letting you focus on your app’s logic.
+
+
+
+✅ What is Routing in Express (or in general web development)?
+Routing means defining how your server should respond to different HTTP requests made to specific paths (URLs).
+
+So yes — you're designing the logic of what will happen or be returned when a user visits a specific route or makes an API call.
+
+📌 Example:
+app.get('/hello', (req, res) => {
+  res.send('Hello World');
+});
+This is a route.
+
+It means: When someone visits /hello using a GET request, send back "Hello World".
+
+🎯 So in short:
+Routing is about defining "what to do" when someone accesses a specific path (like /users, /login, etc.) in your REST API or web app.
+
+It’s where you write the logic for handling different URLs and request types (GET, POST, etc.).
+
+-------------------------------------------------------------------------------------------
+BOILER PLATE CODE
+
+// since we require express , Imports the Express library, which is used to build web servers in Node.js.
+const express = require ('express');
+
+//Creates an instance of an Express application. This app object will be used to define routes and middleware.
+const app = express(); 
+//Sets the port number where your server will listen for requests.
+const PORT = 8000;
+
+//ROUTES will come here 
+
+
+//Starts the server and makes it listen on the specified port. When the server starts, it logs a message to the console
+app.listen(PORT, () => console.log(`Server Started at PORT ${PORT} `))
+
+--------------------------------------------------------------------------------------
+(req, res) => { ... }:
+This is the callback function (also called a route handler) that tells Express what to do when the route is hit.
+
+req = request object (contains info about the request)
+
+res = response object (used to send data back)
