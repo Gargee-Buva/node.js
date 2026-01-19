@@ -1,0 +1,2 @@
+Encoding converts information into specific formats (e.g., binary, URL, UTF-8) to ensure compatibility across different systems, 
+enable efficient storage, and facilitate secure transmission.
