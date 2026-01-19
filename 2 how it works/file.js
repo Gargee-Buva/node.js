@@ -4,3 +4,6 @@ console.log(1) ;
 const result = fs.readFileSync("./test.txt","utf-8") ;
 console.log(result) ;
 console.log(2) ;
+
+// Default Thread pool size = 4
+// Max Thread pool size = no.of cores in cpu 
