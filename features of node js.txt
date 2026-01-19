@@ -1,4 +1,4 @@
-1. Node.js is a runtime environment made up with chrome's v8 engine which is embedded into c++
+1. Node.js is a runtime environment for javascript made up with chrome's v8 engine which is embedded into c++
 2. You can run Js outside the browser with the help of node.js. Javascript can talk to native machines because of cpp
 3. UI related features are being removed i.e window object etc
 4. npm init creates a package .json file , in the scripts section we can add our on scripts with which we can choose which file will be the starting point of the project
