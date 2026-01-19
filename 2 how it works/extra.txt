@@ -1,2 +1,38 @@
-Encoding converts information into specific formats (e.g., binary, URL, UTF-8) to ensure compatibility across different systems, 
-enable efficient storage, and facilitate secure transmission.
+1. Encoding converts information into specific formats (e.g., binary, URL, UTF-8) to ensure compatibility across different systems, 
+   enable efficient storage, and facilitate secure transmission.
+2. A non-blocking request provides a result asynchronously without blocking other tasks through a callback.
+
+Node.js Architecture :-
+1. Client Request
+A client sends a request to the Node.js server.
+This request enters the Node.js runtime.
+
+2. Event Queue
+All incoming requests are placed into the Event Queue.
+The event queue stores callbacks for operations that are ready to be executed.
+
+3. Event Loop (Core of Node.js)
+The Event Loop continuously monitors the event queue.
+It checks whether the call stack is free.
+If free, it picks the next event from the queue and executes it.
+This loop runs continuously, which is why it is called an event loop.
+
+4. Blocking Operations
+Blocking operations are tasks that take time to complete (e.g. file system access, database queries).
+These operations are offloaded to background threads or the system kernel.
+Node.js does not wait for these operations to finish.
+
+Examples:
+File I/O
+Network calls
+Database queries
+
+5. Non-Blocking Operations
+Non-blocking operations execute immediately.
+They do not stop the event loop.
+Once completed, their callbacks are pushed back into the event queue.
+
+6. Processing and Response
+When the background task finishes, its callback is added to the event queue.
+The event loop picks it up and processes it.
+Finally, the response is sent back to the client
