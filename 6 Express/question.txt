@@ -15,3 +15,5 @@ app.post(path, callback) → Handles POST requests
 Each route is like a rule for what the server should do when it gets a certain request
 
 // use cases , why express is used
+
+* Node Vs Express
